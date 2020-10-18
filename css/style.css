@@ -1045,14 +1045,17 @@ figure.effect-bubba:hover p {
 
 
 .youtube-icon::after {
-    content: '\25ba';
-    padding-left: 0.5em;
-    font-size: 24px;
-    color: #fff;
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 18px solid #fff;
     position: absolute;
     top: 50%;
-    left: 48%;
+    left: 55%;
     transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
 .youtube-link > div {
