@@ -226,7 +226,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .pfblock {
-    padding: 120px 0 100px;
+    padding: 50px 0;
 }
 
 .pfblock-gray {
@@ -1012,3 +1012,61 @@ figure.effect-bubba:hover p {
     line-height: 25px;
 }
 
+.youtube-link {
+    text-align: center;
+}
+
+.youtube-link img {
+    width: 50%;
+}
+
+.youtube-link::after {
+    content: '';
+}
+
+@media screen and (max-width: 767px) {
+    .youtube-link img {
+        width: 100%;
+    }
+}
+
+
+.youtube-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff00009c;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+
+.youtube-icon::after {
+    content: '\25ba';
+    padding-left: 0.5em;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.youtube-link > div {
+    position: relative;
+}
+
+.youtube-link p span {
+    color: #fff;
+    background: red;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.youtube-link p {
+    margin: 5px;
+}
